@@ -1,0 +1,309 @@
+
+*{
+    margin: 0;
+    padding: 0 ;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.main-head{
+    background-color: #990021;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 45px;
+}
+.main-head ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-head li{
+    color: white;
+    padding-left: 50px;
+}
+.nav-bar li{
+    cursor: pointer;
+}
+.nav-bar li:hover{
+    text-decoration: underline;
+}
+.sub{
+    padding-left: 2rem;
+}
+
+
+.img-logo img{
+    height: 50px;
+}
+
+
+
+.nav-bar{
+    padding: 25px;
+}
+
+.nav-bar li{
+    display: flex;
+    justify-content: space-between;
+}
+.r-img{
+    cursor: pointer;
+    height: 30px;
+    background-color:;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+}
+header .sub{
+    background-color:  rgb(46, 44, 44);
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+header .sub a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main{
+    background-color: rgb(46, 44, 44);
+}
+.main-bc{
+    background: url(https://images.jawamotorcycles.com/media/images/listing-bg.svg) center top no-repeat ;
+    background-position-x: center;
+    background-size: auto 40%;
+    height: 80v;
+}
+
+
+
+.heading{
+    padding: 30vh 40vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 18px;
+    font-family: ""Avenir-Black"",sans-serif;
+    font-weight: bolder;
+    font-display: Bernier-Distressed-Regular;
+}
+
+.heading p{
+    font-family: "Avenir-Light",sans-serif;
+    color: #808080;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+#ch1, #ch2, #ch3, #ch4{
+    display: none;
+}
+#ch1:checked ~ .b1-p2, #ch2:checked ~ .b2-p2, #ch3:checked ~ .b3-p2, #ch4:checked ~ .b4-p2{  /*if check box checked select sibling .b1-p2*/
+    display: block;
+
+}
+#ch1:checked ~ label,#ch2:checked ~ label, #ch3:checked ~ label, #ch4:checked ~ label{
+    display: none;
+}
+
+
+.b1-p2, .b2-p2, .b3-p2, .b4-p2{
+    display: none;
+}
+
+
+.b1-img, .b2-img, .b3-img, .b4-img{
+        height: 188px;
+        max-width: 100%;
+        /*width: auto;*/
+}
+
+.b1-num, .b2-num, .b3 .b3-num, .b4-num{
+    display: block;
+    height: 45px;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+.bikelist{
+    padding: 0px 300px 45px 350px ;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*1fr means one fraction depents on content*/
+    /*grid-template-rows: 1fr 1fr;*/
+    
+}
+
+.view-details{
+    cursor: pointer;
+    max-width: 295px;
+    padding: 15px;
+    /*display: flex;*/
+    border: black solid ;
+    border-width: 1px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+.view-details i{
+    width: 30px;
+    height: auto;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.b1, .b2, .b3, .b4{
+    justify-content: space-between;
+    min-height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.b1 .b1-img, .b2 .b2-img, .b3 .b3-img, .b4 .b4-img{
+    transition: .5s;
+}
+
+.b1 .b1-img:hover, .b2 .b2-img:hover, .b3 .b3-img:hover, .b4 .b4-img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.b1-p, .b2-p, .b3-p, .b4-p{
+    color: #808080;
+    width: 300px;
+    text-align: ;
+    line-height: 1.4;
+    margin-bottom: 3px;
+    max-width: 274px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    font-family:"Avenir-Light",sans-serif Bernier-Distressed-Regular;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.9);;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+footer{
+    background-color: #9f785c;
+    color: #000;
+    width: 100%;
+}
+
+.get-updates{
+    padding: 20px 30px 20px;
+    margin-left: 50px;
+    background-color: #000;
+    color: #9f785c;
+    width: 26%;
+}
+.wrap{
+    margin-left:5% ;
+    margin-right: 5%;
+    padding: 5% ;
+    width: 76%;
+    
+}
+
+.ft-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.link-group{
+    display: flex;
+    justify-content: space-between;
+}
+.gr1 .list1,.list2, .list3 li {
+    list-style: none;
+    line-height: 4;
+    
+    
+}
+.link-group a{
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+}
+.link-group a:hover{
+    color: #fff;
+}
+.get-updates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ph{
+    display: flex;
+    /*width: 100%;*/
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.sep1{
+    border: solid 1px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+    
+}
+.arrow{
+    cursor: pointer;
+}
+.ph input{
+    width: 100%;
+    font-display: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+.footer-social, .updates{
+    color: #9f785c;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Vesterbro-PosterItalic,sans-serif;
+    padding-bottom: 10px;
+}
+ 
+.social-logos img{
+    height: 20px;
+    margin: 20px;
+
+}
+
+.ft-foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-size: 12px;
+}
+
+.ft1 a{
+    color: wheat;
+    padding: 1rem;    
+}
+.ft1 a:hover{
+    color: white;
+}
